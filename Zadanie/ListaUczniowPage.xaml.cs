@@ -173,14 +173,21 @@ namespace Zadanie
                             int index = Students.IndexOf(selectedStudent);
                             Students[index] = editedUczen;
 
-                         
-                            if (selectedStudent.Klasa != editedUczen.Klasa)
+                            string newClass = editedUczen.Klasa;
+
+                            if (!wybierzKlase.ItemsSource.Contains(newClass))
                             {
-                                UpdateClassesPicker();
+
+                                var newClassesList = wybierzKlase.ItemsSource.Cast<object>().ToList();
+
+                                newClassesList.Add(newClass);
+
+
+                                wybierzKlase.ItemsSource = newClassesList;
                                 LoadStudentsList();
                             }
 
-                          
+
                             Student.SaveStudentsList(Students.ToList(), FilePath);
                         }
                     };
