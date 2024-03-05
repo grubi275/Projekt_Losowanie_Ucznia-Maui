@@ -1,0 +1,28 @@
+^contentpage {
+    -maui-shell-background:lightcoral;
+}
+
+.edytujenrty{
+    background-color:lightpink;
+    margin-top:7;
+    color:black;
+}
+
+.edytujbuton{
+    color:red;
+    margin-top:10;
+}
+
+#butonedytuj{
+    background-color:lawngreen;
+
+}
+
+#usunbuton{
+    background-color:deepskyblue;
+
+}
+
+#dodajbuton{
+    background-color:orange;
+}

@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Zadanie.EdytujUczniaPage"
              Title="EdytujUczniaPage">
+    
     <StackLayout>
-        <Entry x:Name="entryImie" Placeholder="Imię" />
-        <Entry x:Name="entryNazwisko" Placeholder="Nazwisko" />
-        <Entry x:Name="entryKlasa" Placeholder="Klasa" />
-        <Entry x:Name="entryNumer" Placeholder="Numer"/>
+        <Entry x:Name="entryImie" Placeholder="Imię" class="edytujenrty" />
+        <Entry x:Name="entryNazwisko" Placeholder="Nazwisko" class="edytujenrty"/>
+        <Entry x:Name="entryKlasa" Placeholder="Klasa" class="edytujenrty"/>
+        <Entry x:Name="entryNumer" Placeholder="Numer" class="edytujenrty"/>
 
 
-        <Button Text="Edytuj Ucznia" Clicked="EdytujUcznia" />
+        <Button Text="Edytuj Ucznia" Clicked="EdytujUcznia" class="edytujbuton"/>
 
     </StackLayout>
 </ContentPage>

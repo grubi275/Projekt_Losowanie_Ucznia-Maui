@@ -55,10 +55,10 @@ namespace Zadanie
                     LoadStudentsList();
                 }
 
-                var newListaUczniowPage = new ListaUczniowPage();
+               
 
-                
-                Application.Current.MainPage = new NavigationPage(newListaUczniowPage);
+                Navigation.PushAsync(new ListaUczniowPage());
+               
             }
         }
 

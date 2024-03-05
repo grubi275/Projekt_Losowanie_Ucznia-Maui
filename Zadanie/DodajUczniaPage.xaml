@@ -2,13 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Zadanie.DodajUczniaPage"
              Title="Dodaj Ucznia">
+    
     <StackLayout>
-        <Entry x:Name="entryImie" Placeholder="Imię" />
-        <Entry x:Name="entryNazwisko" Placeholder="Nazwisko" />
-        <Entry x:Name="entryKlasa" Placeholder="Klasa" />
-        <Entry x:Name="entryNumer" Placeholder="Numer"/>
+        <Entry x:Name="entryImie" Placeholder="Imię" class="edytujenrty"/>
+        <Entry x:Name="entryNazwisko" Placeholder="Nazwisko" class="edytujenrty" />
+        <Entry x:Name="entryKlasa" Placeholder="Klasa" class="edytujenrty" />
+        <Entry x:Name="entryNumer" Placeholder="Numer" class="edytujenrty"/>
 
-        <Button Text="Dodaj Ucznia" Clicked="DodajUcznia_Clicked" />
+        <Button Text="Dodaj Ucznia" Clicked="DodajUcznia_Clicked" class="edytujbuton"/>
         
     </StackLayout>
 </ContentPage>
