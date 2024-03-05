@@ -1,0 +1,21 @@
+ 
+Celem zadania jest przygotowanie aplikacji w .NET MAUI "System losowania osoby do odpowiedzi"
+Wymagania na ocenę dopuszczającą:
+- realizacja zapisu wpisanych osób do pliku txt z podziałem na klasy
+- możliwość wczytywania listy klasy
+- możliwość wylosowania osoby z wybranej listy
+- możliwość edycji listy uczniów
+- Projekt umieszczony na GITHUB z linkiem wysłanym na forms: https://forms.office.com/e/c6pPsLmbm7
+
+Wymagania na wyższe oceny
+(2 wymagania - ocena 3, 4-4, 6-5, 8-6):
+1. Uwzględnienie systemu szczęśliwego numerka
+2. możliwość wyłączania z losowania osób nieobecnych
+3. Brak możliwości wylosowania osoby która była już odpytana (Po 3 kolejnych wylosowanych osobach wraca do puli osób możliwych do odpytania
+4. Uwzględnienie punktu 2 i 3 w zapisie do plików
+5. Przy pomocy CSS modyfikacja paska tytułowego aplikacji
+6. Przy stylowaniu aplikacji w CSS wykorzystanie systemu Klas oraz wyboru po ID
+7. Wykorzystanie w zauważalny sposób selektora "^"
+8. Wykorzystanie selektora bezpośrednich elementów podrzędnych
+
+Wymagania dotyczące CSS będą brane pod uwagę tylko w przypadku pełnego ostylowania wyglądu aplikacji w plikach CSS

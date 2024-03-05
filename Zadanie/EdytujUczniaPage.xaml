@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie.EdytujUczniaPage"
+             Title="EdytujUczniaPage">
+    <StackLayout>
+        <Entry x:Name="entryImie" Placeholder="Imię" />
+        <Entry x:Name="entryNazwisko" Placeholder="Nazwisko" />
+        <Entry x:Name="entryKlasa" Placeholder="Klasa" />
+        <Entry x:Name="entryNumer" Placeholder="Numer"/>
+
+
+        <Button Text="Edytuj Ucznia" Clicked="EdytujUcznia" />
+
+    </StackLayout>
+</ContentPage>

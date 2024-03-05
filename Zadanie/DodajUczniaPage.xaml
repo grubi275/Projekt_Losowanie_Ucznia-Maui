@@ -1,0 +1,14 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie.DodajUczniaPage"
+             Title="Dodaj Ucznia">
+    <StackLayout>
+        <Entry x:Name="entryImie" Placeholder="Imię" />
+        <Entry x:Name="entryNazwisko" Placeholder="Nazwisko" />
+        <Entry x:Name="entryKlasa" Placeholder="Klasa" />
+        <Entry x:Name="entryNumer" Placeholder="Numer"/>
+
+        <Button Text="Dodaj Ucznia" Clicked="DodajUcznia_Clicked" />
+        
+    </StackLayout>
+</ContentPage>

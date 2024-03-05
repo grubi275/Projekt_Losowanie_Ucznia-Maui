@@ -1,0 +1,41 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie.ListaUczniowPage"
+             Title="Lista Uczniów">
+    <StackLayout>
+        <Picker x:Name="wybierzKlase" Title="Wybierz klasę" SelectedIndexChanged="WybierzKlase_SelectedIndexChanged" />
+
+        <ListView x:Name="studentsListView"
+          ItemsSource="{Binding Students, Mode=TwoWay}"
+          HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <VerticalStackLayout>
+
+            <Label
+        x:Name="uczen"
+        Text="Wylosowany uczeń:"
+        FontSize="18"
+        HorizontalOptions="Center" />
+
+            <Button
+        x:Name="losuj"
+        Text="Losuj ucznia"
+        Clicked="LosujUcznia_Clicked"
+        HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+            <Button Text="Dodaj Ucznia" Clicked="DodajUcznia_Clicked" />
+            <Button Text="Edytuj Ucznia" Clicked="EdytujUcznia_Clicked" />
+            <Button Text="Usuń Ucznia" Clicked="UsunUcznia"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
